@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Automation Builder Frontend
 
-## Getting Started
+A Next.js + React Flow web app for visually creating email automation workflows with drag-drop nodes.
 
-First, run the development server:
+🚀 Features
 
-```bash
+Visual Automation Builder
+
+React Flow Node System
+
+Delay Node + Email Action Node
+
+Save & Edit Workflows
+
+Run Test Automations
+
+Tailwind CSS UI
+
+Production Ready
+
+🛠 Tech Stack
+
+Next.js 14+
+
+React Flow
+
+Tailwind CSS
+
+Axios
+
+JavaScript / React
+
+📁 Project Structure
+client/
+ ├── app/
+ ├── components/
+ ├── lib/
+ ├── public/
+ └── tailwind.config.js
+
+📦 Install Dependencies
+npm install
+
+⚙️ Environment Variables (.env.local)
+NEXT_PUBLIC_API_URL=https://your-backend-url.com
+
+🔗 API Setup (lib/api.js)
+import axios from "axios";
+
+export const api = axios.create({
+  baseURL: process.env.NEXT_PUBLIC_API_URL
+});
+
+▶️ Run Project
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧠 App Pages
+Page	Route
+Home	/
+Create Automation	/editor/new
+Edit Automation	/editor/:id
+🧩 Node Types
+Action Node
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Sends Email
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Delay Node
 
-## Learn More
+Time-based pause
 
-To learn more about Next.js, take a look at the following resources:
+Relative or Specific Date
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🎨 UI Highlights
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Flow Toolbar
 
-## Deploy on Vercel
+Responsive Design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Error UI below input
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Button reusable styles
+
+🚀 Production Deploy (Vercel)
+
+Build Command:
+
+npm install && npm run build
